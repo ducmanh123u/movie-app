@@ -1,0 +1,21 @@
+.logo {
+    color: #83bd47;
+    cursor: pointer;
+    font-weight: 700;
+    transform-origin: center;
+    display: flex;
+
+    &:hover {
+        color: #ff8a00;
+    }
+}
+
+.footerLink {
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+
+    &:hover {
+        color: #83bd47;
+    }
+}

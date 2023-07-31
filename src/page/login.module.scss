@@ -1,0 +1,13 @@
+.login {
+    height: 49vh;
+    width: 700px !important;
+
+}
+
+.logo {
+    cursor: pointer;
+
+    &:hover {
+        color: #ff8a00 !important;
+    }
+}

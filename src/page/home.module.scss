@@ -1,0 +1,13 @@
+.posterMovie {
+    white-space: nowrap;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #83bd47;
+        border-radius: 20px;
+    }
+}
