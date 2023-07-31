@@ -9,7 +9,7 @@ function Backdropmovie({ dataBackdropMovie, first }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/info/${dataBackdropMovie.id}`);
+    navigate(`/movie-app/info/${dataBackdropMovie.id}`);
   };
   return (
     <div

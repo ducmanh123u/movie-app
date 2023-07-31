@@ -14,7 +14,7 @@ function Footer() {
       >
         <p
           onClick={() => {
-            navigte(`/`);
+            navigte(`/movie-app`);
           }}
           className={styles.logo + " fs-3 m-4"}
         >
@@ -29,7 +29,7 @@ function Footer() {
           </p>
           <p
             onClick={() => {
-              navigte(`/now`);
+              navigte(`/movie-app/now`);
             }}
             className={"fs-6 " + styles.footerLink}
           >
@@ -37,7 +37,7 @@ function Footer() {
           </p>
           <p
             onClick={() => {
-              navigte(`/popular`);
+              navigte(`/movie-app/popular`);
             }}
             className={"fs-6 " + styles.footerLink}
           >
@@ -45,7 +45,7 @@ function Footer() {
           </p>
           <p
             onClick={() => {
-              navigte(`/rate`);
+              navigte(`/movie-app/rate`);
             }}
             className={"fs-6 " + styles.footerLink}
           >
@@ -53,7 +53,7 @@ function Footer() {
           </p>
           <p
             onClick={() => {
-              navigte(`/upcoming`);
+              navigte(`/movie-app/upcoming`);
             }}
             className={"fs-6 " + styles.footerLink}
           >

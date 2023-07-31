@@ -79,7 +79,7 @@ function App() {
       <Routes>
         <Route
           exact
-          path="/"
+          path="/movie-app"
           element={
             <Home
               data={{
@@ -96,11 +96,11 @@ function App() {
           }
         />
         <Route
-          path="/now"
+          path="/movie-app/now"
           element={<Now dataNow={dataNow} checkDataNow={checkDataNow} />}
         />
         <Route
-          path="/popular"
+          path="/movie-app/popular"
           element={
             <Popular
               dataPopular={dataPopular}
@@ -109,11 +109,11 @@ function App() {
           }
         />
         <Route
-          path="/rate"
+          path="/movie-app/rate"
           element={<Rate dataRate={dataRate} checkDataRate={checkDataRate} />}
         />
         <Route
-          path="/upcoming"
+          path="/movie-app/upcoming"
           element={
             <Upcoming
               dataUpcoming={dataUpcoming}
@@ -121,9 +121,9 @@ function App() {
             />
           }
         />
-        <Route path="/login" element={<Login />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/info/:id" element={<Info />} />
+        <Route path="/movie-app/login" element={<Login />} />
+        <Route path="/movie-app/search" element={<Search />} />
+        <Route path="/movie-app/info/:id" element={<Info />} />
       </Routes>
     </BrowserRouter>
   );

@@ -14,11 +14,11 @@ function MyNavbar() {
   const inputSearchEle = useRef(null);
 
   const handleClick = () => {
-    navigate("/");
+    navigate("/movie-app");
   };
 
   const handleSearch = () => {
-    navigate(`/search?q=${inputSearchEle.current.value}`);
+    navigate(`/movie-app/search?q=${inputSearchEle.current.value}`);
   };
   return (
     <Navbar expand="lg" className="navbar navbar-dark bg-dark">
@@ -35,22 +35,37 @@ function MyNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link className={"nav-link fs-6 " + styles.navlink} to="/">
+            <Link className={"nav-link fs-6 " + styles.navlink} to="/movie-app">
               Trang Chủ
             </Link>
-            <Link className={"nav-link fs-6 " + styles.navlink} to="/login">
+            <Link
+              className={"nav-link fs-6 " + styles.navlink}
+              to="/movie-app/login"
+            >
               Đăng Nhập
             </Link>
-            <Link className={"nav-link fs-6 " + styles.navlink} to="/now">
+            <Link
+              className={"nav-link fs-6 " + styles.navlink}
+              to="/movie-app/now"
+            >
               Phim Đề Cử
             </Link>
-            <Link className={"nav-link fs-6  " + styles.navlink} to="/popular">
+            <Link
+              className={"nav-link fs-6  " + styles.navlink}
+              to="/movie-app/popular"
+            >
               Phim Phổ Biến
             </Link>
-            <Link className={"nav-link fs-6 " + styles.navlink} to="/rate">
+            <Link
+              className={"nav-link fs-6 " + styles.navlink}
+              to="/movie-app/rate"
+            >
               Phim Theo Đánh Giá
             </Link>
-            <Link className={"nav-link fs-6 " + styles.navlink} to="/upcoming">
+            <Link
+              className={"nav-link fs-6 " + styles.navlink}
+              to="/movie-app/upcoming"
+            >
               Phim Sắp Chiếu
             </Link>
           </Nav>

@@ -7,7 +7,7 @@ function Postermovie({ dataPosterMovie }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/info/${dataPosterMovie.id}`);
+    navigate(`/movie-app/info/${dataPosterMovie.id}`);
   };
 
   return (
